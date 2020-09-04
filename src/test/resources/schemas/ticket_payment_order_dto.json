@@ -1,0 +1,39 @@
+{
+  "type": "array",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Ticket payment order JSON Schema",
+  "minItems": 1,
+  "uniqueItems": true,
+  "items": {
+    "type": "object",
+    "required": [
+      "orderId",
+      "routeNumber",
+      "orderSentTime",
+      "clientId",
+      "paymentId",
+      "status"
+    ],
+    "properties": {
+      "orderId": {
+        "type": "string"
+      },
+      "routeNumber": {
+        "type": "string"
+      },
+      "orderSentTime": {
+        "type": "string"
+      },
+      "clientId": {
+        "type": "string"
+      },
+      "paymentId": {
+        "type": "string"
+      },
+      "status": {
+        "type": "string"
+      }
+
+    }
+  }
+}
